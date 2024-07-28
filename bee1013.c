@@ -1,15 +1,17 @@
 #include<stdio.h>
 #include<math.h>
 int main(){
-int x,y,z,m;
+int x,y,z,mAB,mABC;
 
 scanf("%d",&x);
 scanf("%d",&y);
 scanf("%d",&z);
 
-m = (x+y+abs(x-y))/2;
+mAB = (x+y+abs(x-y))/2;
 
-printf("%d eh o maior\n",m);
+mABC = (mAB+z+abs(mAB-z))/2;
+
+printf("%d eh o maior\n",mABC);
 
 
 
