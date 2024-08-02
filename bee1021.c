@@ -5,8 +5,7 @@ int main(){
 
 float N;
 int oneh,fif,twe,ten,fiv,two;
-int one,zfif,ztwef,zten,zzfiv;
-float zzone;
+int one,zfif,ztwef,zten,zzfiv, zzone;
 
 scanf("%f",&N);
 
@@ -40,7 +39,7 @@ N = fmod(N , 0.10);
 zzfiv = N / 0.05;
 N = fmod(N , 0.05);
 
-zzone = N / 0.01;
+zzone = round(N / 0.01);
 
 printf("NOTAS:\n");
 printf("%d nota(s) de R$ 100.00\n",oneh);
@@ -56,7 +55,7 @@ printf("%d moeda(s) de R$ 0.50\n",zfif);
 printf("%d moeda(s) de R$ 0.25\n",ztwef);
 printf("%d moeda(s) de R$ 0.10\n",zten);
 printf("%d moeda(s) de R$ 0.05\n",zzfiv);
-printf("%.0f moeda(s) de R$ 0.01\n",zzone);
+printf("%d moeda(s) de R$ 0.01\n",zzone);
 
 
     return 0;
